@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="/savol.css">
+</head>
+<body>
+
+    <!-- 1998
+    873-950
+    160
+    xvi
+    ix
+    1075
+    50
+    920
+    bolasogunda
+    1072 -->
+
+
+
+    <div class="container">
+        <div class="container">
+            <script>
+                let integer = 0;
+            </script>
+            <button id="boshlash" class="boshlash" onclick="boshlash()">Boshlash</button>
+            <script>
+                function boshlash(){
+                    document.getElementById('savollar1').style.display="block";
+                    document.getElementById('boshlash').style.display="none";
+                }
+            </script>
+        
+        
+            <div id="savollar1" class="savollar1" style="display: none;">
+                <h2>[1/10] Nechanchi yili oktabrda alloma Ahmad al-Farg'oniy tavalludining 1200 yilligi nishonlandi.</h2>
+                <button id="right" class="right" onclick="right()">1998</button>
+                <button id="wrong1" class="wrong" onclick="wrong1()">1997</button>
+                <button id="wrong2" class="wrong" class="wrong" onclick="wrong2()">1995</button>
+                
+        
+                    <script>
+                        function right() {      
+                            document.getElementById('savollar2').style.display='BLOK';
+                            document.getElementById('savollar1').style.display='none';
+                            integer +=1;
+                            document.getElementById('natija').innerHTML="Sizning natijangiz: "+integer; 
+                        }
+                        function wrong1() {
+                            document.getElementById('wrong1').style.backgroundColor='red';
+                            document.getElementById('wrong2').style.display="none";
+                            document.getElementById('wrong3').style.display="none";
+                            document.getElementById('right').style.display="none";
+                            document.getElementById('takrorlash').style.display="block";
+                        }
+                        function wrong2() {
+                            document.getElementById('wrong2').style.backgroundColor='red';
+                            document.getElementById('wrong1').style.display="none";
+                            document.getElementById('wrong3').style.display="none";
+                            document.getElementById('right').style.display="none";
+                            document.getElementById('takrorlash').style.display="block";
+                        }
+                        function wrong3() {
+                            document.getElementById('wrong3').style.backgroundColor='red';
+                            document.getElementById('wrong2').style.display="none";
+                            document.getElementById('wrong1').style.display="none";
+                            document.getElementById('right').style.display="none";
+                            document.getElementById('takrorlash').style.display="block";
+                        }
+                    </script>
+        
+        
+        
+        
+            </div>
+            <div id="savollar2" class="savollar2" style="display: none;">
+                <h2>[2/10] Abu Nasr Farobiy qachon tug'ilgan va vafot etgan?</h2>
+                <button id="wrong2.1" class="wrong" onclick="wrong2_1()">914-1034</button>
+                <button id="wrong2.2" class="wrong" onclick="wrong2_2()">797-865
+                </button>
+                <button id="right2"  class="right" onclick="right2()">873-950</button>
+                <button id="wrong2.3" class="wrong" onclick="wrong2_3()">980-1037</button>
+              
+                    <a href="/uzbtarix.html" id="takrorlash2" style="display: none;"> Takrorlash</a>
+                    <button type="button" id="Savol3" onclick="savol3()" style="display: none;">3-savol</button>
+          
+            <script>
+                function right2() {      
+                    document.getElementById('right2').style.backgroundColor='green';
+                    document.getElementById('wrong2.1').style.backgroundColor='red';
+                    document.getElementById('wrong2.2').style.backgroundColor='red';
+                    document.getElementById('wrong2.3').style.backgroundColor='red';
+                    document.getElementById('Savol3').style.display="block";
+                    document.getElementById('wrong2.1').removeAttribute('onclick');
+                    document.getElementById('wrong2.2').removeAttribute('onclick');
+                    document.getElementById('wrong2.3').removeAttribute('onclick');
+                    document.getElementById('right2').removeAttribute("onclick")
+                    integer +=1;
+                    document.getElementById('natija').innerHTML="6/ "+integer; 
+                }
+                function wrong2_1() {
+                    document.getElementById('wrong2.1').style.backgroundColor='red';
+                    document.getElementById('wrong2.2').style.display="none";
+                    document.getElementById('wrong2.3').style.display="none";
+                    document.getElementById('right2').style.display="none";
+                    document.getElementById('takrorlash2').style.display="block";
+                }
+                function wrong2_2() {
+                    document.getElementById('wrong2.2').style.backgroundColor='red';
+                    document.getElementById('wrong2.1').style.display="none";
+                    document.getElementById('wrong2.3').style.display="none";
+                    document.getElementById('right2').style.display="none";
+                    document.getElementById('takrorlash2').style.display="block";
+                }
+                function wrong2_3() {
+                    document.getElementById('wrong2.3').style.backgroundColor='red';
+                    document.getElementById('wrong2.2').style.display="none";
+                    document.getElementById('wrong2.1').style.display="none";
+                    document.getElementById('right2').style.display="none";
+                    document.getElementById('takrorlash2').style.display="block";
+                }
+              </script>
+            </div>
+            <script>
+                function savol3(){
+                    document.getElementById('savollar2').style.display="none";
+                    document.getElementById('savollar3').style.display="block";
+                    document.getElementById('Savol3').style.display="none";
+                }
+            </script>
+        
+        
+        
+            <div id="savollar3" class="savollar3" style="display: none;">
+                <h2>[3/10] Beruniy astranomiya, geografiya, matematika va tarix fanlari bo'yicha nechadan ortiq asarlar yozgan?</h2>
+                 <button id="wrong3.1" class="wrong" onclick="wrong3_1()">100</button>
+                <button id="wrong3.2" class="wrong" onclick="wrong3_2()">140</button>
+                <button id="right3"  class="right" onclick="right3()">160</button>
+                <button id="wrong3.3" class="wrong" onclick="wrong3_3()">150</button>
+              
+                <a href="/uzbtarix.html" id="takrorlash3" style="display: none;"> Takrorlash</a>
+                <button type="button" id="Savol4" onclick="savol4()" style="display: none;">4-savol</button>
+          
+                <script>
+                    function right3() {      
+                        document.getElementById('right3').style.backgroundColor='green';
+                        document.getElementById('wrong3.1').style.backgroundColor='red';
+                        document.getElementById('wrong3.2').style.backgroundColor='red';
+                        document.getElementById('wrong3.3').style.backgroundColor='red';
+                        document.getElementById('Savol4').style.display="block";
+                        document.getElementById('wrong3.1').removeAttribute('onclick');
+                        document.getElementById('wrong3.2').removeAttribute('onclick');
+                        document.getElementById('wrong3.3').removeAttribute('onclick');
+                        document.getElementById('right3').removeAttribute("onclick")
+                        integer +=1;
+                        document.getElementById('natija').innerHTML="6/ "+integer; 
+                    }
+                    function wrong3_1() {
+                        document.getElementById('wrong3.1').style.backgroundColor='red';
+                        document.getElementById('wrong3.2').style.display="none";
+                        document.getElementById('wrong3.3').style.display="none";
+                        document.getElementById('right3').style.display="none";
+                        document.getElementById('takrorlash3').style.display="block";
+                    }
+                    function wrong3_2() {
+                        document.getElementById('wrong3.2').style.backgroundColor='red';
+                        document.getElementById('wrong3.1').style.display="none";
+                        document.getElementById('wrong3.3').style.display="none";
+                        document.getElementById('right3').style.display="none";
+                        document.getElementById('takrorlash3').style.display="block";
+                    }
+                    function wrong3_3() {
+                        document.getElementById('wrong3.3').style.backgroundColor='red';
+                        document.getElementById('wrong3.2').style.display="none";
+                        document.getElementById('wrong3.1').style.display="none";
+                        document.getElementById('right3').style.display="none";
+                        document.getElementById('takrorlash3').style.display="block";
+                    }
+                </script>
+            </div>
+        
+        
+            <script>
+                function savol4(){
+                    document.getElementById('savollar3').style.display="none";
+                    document.getElementById('savollar4').style.display="block";
+                    document.getElementById('Savol4').style.display="none";
+                }
+            </script>
+        
+        
+        
+            <div id="savollar4" class="savollar4" style="display: none;">
+                <h2>[4/10] Yevropada mashhur bo'lgan alloma nomi nechanchi asrda Oydagi kraterlardan biriga berilgan?</h2>
+                <button id="wrong4.1" class="wrong" onclick="wrong4_1()">XIV</button>
+                <button id="wrong4.2" class="wrong" onclick="wrong4_2()">IX</button>
+                <button id="right4"  class="right" onclick="right4()">XVI</button>
+                <button id="wrong4.3" class="wrong" onclick="wrong4_3()">XII</button>
+        
+              
+                <a href="./savol.html" id="takrorlash4" style="display: none;"> Takrorlash</a>
+                <button type="button" id="Savol5" onclick="savol5()" style="display: none;">5-savol</button>
+          
+                <script>
+                    function right4() {      
+                        document.getElementById('right4').style.backgroundColor='green';
+                        document.getElementById('wrong4.1').style.backgroundColor='red';
+                        document.getElementById('wrong4.2').style.backgroundColor='red';
+                        document.getElementById('wrong4.3').style.backgroundColor='red';
+                        document.getElementById('Savol5').style.display="block";
+                        document.getElementById('wrong4.1').removeAttribute('onclick');
+                        document.getElementById('wrong4.2').removeAttribute('onclick');
+                        document.getElementById('wrong4.3').removeAttribute('onclick');
+                        document.getElementById('right4').removeAttribute("onclick")
+                        integer +=1;
+                        document.getElementById('natija').innerHTML="6/ "+integer; 
+                    }
+                    function wrong4_1() {
+                        document.getElementById('wrong4.1').style.backgroundColor='red';
+                        document.getElementById('wrong4.2').style.display="none";
+                        document.getElementById('wrong4.3').style.display="none";
+                        document.getElementById('right4').style.display="none";
+                        document.getElementById('takrorlash4').style.display="block";
+                    }
+                    function wrong4_2() {
+                        document.getElementById('wrong4.2').style.backgroundColor='red';
+                        document.getElementById('wrong4.1').style.display="none";
+                        document.getElementById('wrong4.3').style.display="none";
+                        document.getElementById('right4').style.display="none";
+                        document.getElementById('takrorlash4').style.display="block";
+                    }
+                    function wrong4_3() {
+                        document.getElementById('wrong4.3').style.backgroundColor='red';
+                        document.getElementById('wrong4.2').style.display="none";
+                        document.getElementById('wrong4.1').style.display="none";
+                        document.getElementById('right4').style.display="none";
+                        document.getElementById('takrorlash4').style.display="block";
+                }
+              </script>
+            </div>
+            
+            <script>
+                function savol5(){
+                    document.getElementById('savollar4').style.display="none";
+                    document.getElementById('savollar5').style.display="block";
+                    document.getElementById('Savol5').style.display="none";
+                }
+            </script>
+        
+        
+        
+            <div id="savollar5" class="savollar5" style="display: none;">
+                <h2>[5/10] Bag'dod shahrida nechanchi asrda  " Bayt ul-hikma" tashkil etilgan edi?</h2>
+                <button id="right5" class="right5" onclick="right5()">IX</button>
+                <button id="wrong5.1" class="wrong" onclick="wrong5_1()">XII</button>
+                <button id="wrong5.2" class="wrong5.1"  onclick="wrong5_2()">VII</button>
+                <button id="wrong5.3" class="wrong"  onclick="wrong5_3()">XI</button>
+          
+                <a href="./uzbtarix.html" id="takrorlash5" style="display: none;"> Takrorlash</a>
+        
+                <button type="button" id="Savol6" onclick="savol6()" style="display: none;">6-savol</button>
+                <script>
+                    function right5() {      
+                        document.getElementById('right5').style.backgroundColor='green';
+                        document.getElementById('wrong5.1').style.backgroundColor='red';
+                        document.getElementById('wrong5.2').style.backgroundColor='red';
+                        document.getElementById('wrong5.3').style.backgroundColor='red';
+                        document.getElementById('Savol6').style.display="block";
+                        document.getElementById('wrong5.1').removeAttribute('onclick');
+                        document.getElementById('wrong5.2').removeAttribute('onclick');
+                        document.getElementById('wrong5.3').removeAttribute('onclick');
+                        document.getElementById('right5').removeAttribute("onclick")
+                        integer +=1;
+                        document.getElementById('natija').innerHTML="6: "+integer; 
+                    }
+                    function wrong5_1() {
+                        document.getElementById('wrong5.1').style.backgroundColor='red';
+                        document.getElementById('wrong5.2').style.display="none";
+                        document.getElementById('wrong5.3').style.display="none";
+                        document.getElementById('right5').style.display="none";
+                        document.getElementById('takrorlash5').style.display="block";
+                    }
+                    function wrong5_2() {
+                        document.getElementById('wrong5.2').style.backgroundColor='red';
+                        document.getElementById('wrong5.1').style.display="none";
+                        document.getElementById('wrong5.3').style.display="none";
+                        document.getElementById('right5').style.display="none";
+                        document.getElementById('takrorlash5').style.display="block";
+                    }
+                    function wrong5_3() {
+                        document.getElementById('wrong5.3').style.backgroundColor='red';
+                        document.getElementById('wrong5.2').style.display="none";
+                        document.getElementById('wrong5.1').style.display="none";
+                        document.getElementById('right5').style.display="none";
+                        document.getElementById('takrorlash5').style.display="block";
+                }
+                </script>
+        
+        
+        
+        
+            </div>
+            <script>
+                function savol6(){
+                    document.getElementById('savollar5').style.display="none";
+                    document.getElementById('savollar6').style.display="block";
+                    document.getElementById('Savol6').style.display="none";
+                }
+            </script> 
+        
+        
+        <div id="savollar6" class="savollar6" style="display: none;">
+            <h2>[6/10] Abulqosim Mahmud az-Zamahshariy nechanchi yilda tug'ilgan?</h2>
+            <button id="right6" class="right6" onclick="right6()">1075</button>
+            <button id="wrong6.1" class="wrong" onclick="wrong6_1()">1144</button>
+            <button id="wrong6.2" class="wrong5.1"  onclick="wrong6_2()">1069</button>
+            <button id="wrong6.3" class="wrong"  onclick="wrong6_3()">1070</button>
+        
+            <a href="/uzbtarix.html" id="takrorlash5" style="display: none;"> Takrorlash</a>
+        
+            <button type="button" id="Savol7" onclick="savol7()" style="display: none;">7-savol</button>
+            <script>
+                function right6() {      
+                    document.getElementById('right6').style.backgroundColor='green';
+                    document.getElementById('wrong6.1').style.backgroundColor='red';
+                    document.getElementById('wrong6.2').style.backgroundColor='red';
+                    document.getElementById('wrong6.3').style.backgroundColor='red';
+                    document.getElementById('Savol7').style.display="block";
+                    document.getElementById('wrong6.1').removeAttribute('onclick');
+                    document.getElementById('wrong6.2').removeAttribute('onclick');
+                    document.getElementById('wrong6.3').removeAttribute('onclick');
+                    document.getElementById('right6').removeAttribute("onclick")
+                    integer +=1;
+                   
+                    document.getElementById('natija').innerHTML="Sizning natijangiz: "+integer; 
+                   
+                }
+                function wrong6_1() {
+                    document.getElementById('wrong6.1').style.backgroundColor='red';
+                    document.getElementById('wrong6.2').style.display="none";
+                    document.getElementById('wrong6.3').style.display="none";
+                    document.getElementById('right6').style.display="none";
+                    document.getElementById('takrorlash6').style.display="block";
+                    
+                }
+                function wrong6_2() {
+                    document.getElementById('wrong6.2').style.backgroundColor='red';
+                    document.getElementById('wrong6.1').style.display="none";
+                    document.getElementById('wrong6.3').style.display="none";
+                    document.getElementById('right6').style.display="none";
+                    document.getElementById('takrorlash6').style.display="block";
+                   
+                }
+                function wrong6_3() {
+                    document.getElementById('wrong6.3').style.backgroundColor='red';
+                    document.getElementById('wrong6.2').style.display="none";
+                    document.getElementById('wrong6.1').style.display="none";
+                    document.getElementById('right6').style.display="none";
+                    document.getElementById('takrorlash6').style.display="block";
+                   
+            }
+            </script>
+        
+        
+        
+        
+        </div>
+        <script>
+            function savol7(){
+                document.getElementById('savollar6').style.display="none";
+                document.getElementById('savollar7').style.display="block";
+                document.getElementById('Savol7').style.display="none";
+            }
+        </script> 
+        <div id="savollar7" class="savollar7" style="display: none;">
+            <h2>[7/10] Mahmud Zamaxshariy turli soha ilmlarga oid nechadan ortiq asarlar yozib qoldirdi?</h2>
+            <button id="wrong7.1" class="wrong" onclick="wrong7_1()">23</button>
+            <button id="wrong7.2" class="wrong" onclick="wrong7_2()">40</button>
+            <button id="right7"  class="right" onclick="right7()">50</button>
+            <button id="wrong7.3" class="wrong" onclick="wrong7_3()">15</button>
+          
+                <a href="/uzbtarix.html" id="takrorlash7" style="display: none;"> Takrorlash</a>
+                <button type="button" id="Savol8" onclick="savol8()" style="display: none;">8-savol</button>
+        
+        <script>
+            function right7() {      
+                document.getElementById('right7').style.backgroundColor='green';
+                document.getElementById('wrong7.1').style.backgroundColor='red';
+                document.getElementById('wrong7.2').style.backgroundColor='red';
+                document.getElementById('wrong7.3').style.backgroundColor='red';
+                document.getElementById('Savol8').style.display="block";
+                document.getElementById('wrong7.1').removeAttribute('onclick');
+                document.getElementById('wrong7.2').removeAttribute('onclick');
+                document.getElementById('wrong7.3').removeAttribute('onclick');
+                document.getElementById('right7').removeAttribute("onclick")
+                integer +=1;
+                document.getElementById('natija').innerHTML="10/ "+integer; 
+            }
+            function wrong7_1() {
+                document.getElementById('wrong7.1').style.backgroundColor='red';
+                document.getElementById('wrong7.2').style.display="none";
+                document.getElementById('wrong7.3').style.display="none";
+                document.getElementById('right7').style.display="none";
+                document.getElementById('takrorlash7').style.display="block";
+            }
+            function wrong7_2() {
+                document.getElementById('wrong7.2').style.backgroundColor='red';
+                document.getElementById('wrong7.1').style.display="none";
+                document.getElementById('wrong7.3').style.display="none";
+                document.getElementById('right7').style.display="none";
+                document.getElementById('takrorlash7').style.display="block";
+            }
+            function wrong7_3() {
+                document.getElementById('wrong7.3').style.backgroundColor='red';
+                document.getElementById('wrong7.2').style.display="none";
+                document.getElementById('wrong7.1').style.display="none";
+                document.getElementById('right7').style.display="none";
+                document.getElementById('takrorlash7').style.display="block";
+            }
+          </script>
+        </div>
+        
+        <script>
+            function savol8(){
+                document.getElementById('savollar7').style.display="none";
+                document.getElementById('savollar8').style.display="block";
+                document.getElementById('Savol8').style.display="none";
+            }
+        </script> 
+        <div id="savollar8" class="savollar8" style="display: none;">
+            <h2>[8/10] O'zbekistonda 1995 yili Zamahshariyning necha yilligi nishonlandi?</h2>
+            <button id="wrong8.1" class="wrong" onclick="wrong8_1()">890</button>
+            <button id="wrong8.2" class="wrong" onclick="wrong8_2()">789</button>
+            <button id="right8"  class="right" onclick="right8()">920</button>
+            <button id="wrong8.3" class="wrong" onclick="wrong8_3()">900</button>
+          
+                <a href="/uzbtarix.html" id="takrorlash8" style="display: none;"> Takrorlash</a>
+                <button type="button" id="Savol9" onclick="savol9()" style="display: none;">9-savol</button>
+        
+        <script>
+            function right8() {      
+                document.getElementById('right8').style.backgroundColor='green';
+                document.getElementById('wrong8.1').style.backgroundColor='red';
+                document.getElementById('wrong8.2').style.backgroundColor='red';
+                document.getElementById('wrong8.3').style.backgroundColor='red';
+                document.getElementById('Savol9').style.display="block";
+                document.getElementById('wrong8.1').removeAttribute('onclick');
+                document.getElementById('wrong8.2').removeAttribute('onclick');
+                document.getElementById('wrong8.3').removeAttribute('onclick');
+                document.getElementById('right8').removeAttribute("onclick")
+                integer +=1;
+                document.getElementById('natija').innerHTML="10/ "+integer; 
+            }
+            function wrong8_1() {
+                document.getElementById('wrong8.1').style.backgroundColor='red';
+                document.getElementById('wrong8.2').style.display="none";
+                document.getElementById('wrong8.3').style.display="none";
+                document.getElementById('right8').style.display="none";
+                document.getElementById('takrorlash8').style.display="block";
+            }
+            function wrong8_2() {
+                document.getElementById('wrong8.2').style.backgroundColor='red';
+                document.getElementById('wrong8.1').style.display="none";
+                document.getElementById('wrong8.3').style.display="none";
+                document.getElementById('right8').style.display="none";
+                document.getElementById('takrorlash8').style.display="block";
+            }
+            function wrong8_3() {
+                document.getElementById('wrong8.3').style.backgroundColor='red';
+                document.getElementById('wrong8.2').style.display="none";
+                document.getElementById('wrong8.1').style.display="none";
+                document.getElementById('right8').style.display="none";
+                document.getElementById('takrorlash8').style.display="block";
+            }
+          </script>
+        </div>
+        <script>
+            function savol9(){
+                document.getElementById('savollar8').style.display="none";
+                document.getElementById('savollar9').style.display="block";
+                document.getElementById('Savol9').style.display="none";
+            }
+        </script> 
+        <div id="savollar9" class="savollar9" style="display: none;">
+            <h2>[9/10] Yusuf Xos xojib qayerda tug'ilgan?</h2>
+            <button id="wrong9.1" class="wrong" onclick="wrong9_1()">Kat  shahrida</button>
+            <button id="wrong9.2" class="wrong" onclick="wrong9_2()">Afshonada</button>
+            <button id="right9"  class="right" onclick="right9()">bolasog'unda</button>
+            <button id="wrong9.3" class="wrong" onclick="wrong9_3()">Quva  shahrida</button>
+          
+                <a href="/uzbtarix.html" id="takrorlash9" style="display: none;"> Takrorlash</a>
+                <button type="button" id="Savol10" onclick="savol10()" style="display: none;">10-savol</button>
+        
+        <script>
+            function right9() {      
+                document.getElementById('right9').style.backgroundColor='green';
+                document.getElementById('wrong9.1').style.backgroundColor='red';
+                document.getElementById('wrong9.2').style.backgroundColor='red';
+                document.getElementById('wrong9.3').style.backgroundColor='red';
+                document.getElementById('Savol10').style.display="block";
+                document.getElementById('wrong9.1').removeAttribute('onclick');
+                document.getElementById('wrong9.2').removeAttribute('onclick');
+                document.getElementById('wrong9.3').removeAttribute('onclick');
+                document.getElementById('right9').removeAttribute("onclick")
+                integer +=1;
+                document.getElementById('natija').innerHTML="10/ "+integer; 
+            }
+            function wrong9_1() {
+                document.getElementById('wrong9.1').style.backgroundColor='red';
+                document.getElementById('wrong9.2').style.display="none";
+                document.getElementById('wrong9.3').style.display="none";
+                document.getElementById('right9').style.display="none";
+                document.getElementById('takrorlash9').style.display="block";
+            }
+            function wrong9_2() {
+                document.getElementById('wrong9.2').style.backgroundColor='red';
+                document.getElementById('wrong9.1').style.display="none";
+                document.getElementById('wrong9.3').style.display="none";
+                document.getElementById('right9').style.display="none";
+                document.getElementById('takrorlash9').style.display="block";
+            }
+            function wrong9_3() {
+                document.getElementById('wrong9.3').style.backgroundColor='red';
+                document.getElementById('wrong9.2').style.display="none";
+                document.getElementById('wrong9.1').style.display="none";
+                document.getElementById('right9').style.display="none";
+                document.getElementById('takrorlash9').style.display="block";
+            }
+          </script>
+        </div>
+        
+        <script>
+            function savol10(){
+                document.getElementById('savollar9').style.display="none";
+                document.getElementById('savollar10').style.display="block";
+                document.getElementById('Savol10').style.display="none";
+            }
+        </script> 
+        <div id="savollar10" class="savollar10" style="display: none;">
+            <h2>[10/10] Mahmud Koshg'ariyning "Devoni lug'otit turk" asari qachon tugatildi?</h2>
+            <button id="wrong10.1" class="wrong" onclick="wrong10_1()">1070</button>
+            <button id="wrong10.2" class="wrong" onclick="wrong10_2()">1071</button>
+            <button id="right10"  class="right" onclick="right10()">1072</button>
+            <button id="wrong10.3" class="wrong" onclick="wrong10_3()">1073</button>
+          
+                <a href="/uzbtarix.html" id="takrorlash10" style="display: none;"> Takrorlash</a>
+                <button type="button" id="Savol11" onclick="savol11()" style="display: none;">Savollar tamom!</button>
+        
+        <script>
+            function right10() {      
+                document.getElementById('right10').style.backgroundColor='green';
+                document.getElementById('wrong10.1').style.backgroundColor='red';
+                document.getElementById('wrong10.2').style.backgroundColor='red';
+                document.getElementById('wrong10.3').style.backgroundColor='red';
+                document.getElementById('Savol11').style.display="block";
+                document.getElementById('wrong10.1').removeAttribute('onclick');
+                document.getElementById('wrong10.2').removeAttribute('onclick');
+                document.getElementById('wrong10.3').removeAttribute('onclick');
+                document.getElementById('right10').removeAttribute("onclick")
+                integer +=1;
+                document.getElementById('natija').innerHTML="10/ "+integer; 
+                document.getElementById('natija1').innerHTML="Savollar tamom ishtirokingiz uchun raxmat foydali bo`ldi degan umiddaman!"
+            }
+            function wrong10_1() {
+                document.getElementById('wrong10.1').style.backgroundColor='red';
+                document.getElementById('wrong10.2').style.display="none";
+                document.getElementById('wrong10.3').style.display="none";
+                document.getElementById('right10').style.display="none";
+                document.getElementById('takrorlash10').style.display="block";
+                document.getElementById('natija1').innerHTML="Savollar tamom ishtirokingiz uchun raxmat foydali bo`ldi degan umiddaman!"
+            }
+            function wrong10_2() {
+                document.getElementById('wrong10.2').style.backgroundColor='red';
+                document.getElementById('wrong10.1').style.display="none";
+                document.getElementById('wrong10.3').style.display="none";
+                document.getElementById('right10').style.display="none";
+                document.getElementById('takrorlash10').style.display="block";
+                document.getElementById('natija1').innerHTML="Savollar tamom ishtirokingiz uchun raxmat foydali bo`ldi degan umiddaman!"
+            }
+            function wrong10_3() {
+                document.getElementById('wrong10.3').style.backgroundColor='red';
+                document.getElementById('wrong10.2').style.display="none";
+                document.getElementById('wrong10.1').style.display="none";
+                document.getElementById('right10').style.display="none";
+                document.getElementById('takrorlash10').style.display="block";
+                document.getElementById('natija1').innerHTML="Savollar tamom ishtirokingiz uchun raxmat foydali bo`ldi degan umiddaman!"
+            }
+          </script>
+        </div>
+            
+            
+        
+        
+         <p id="natija"></p>
+         <p id="natija1"></p>
+    </div>
+</body>
+</html>

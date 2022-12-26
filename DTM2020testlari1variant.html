@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="/savol.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <script>
+                let integer=0;
+            </script>
+            <button id="boshlash" class="boshlash" onclick="boshlash()">Boshlash</button>
+            <script>
+                function boshlash(){
+                    document.getElementById('savollar1').style.display="block";
+                    document.getElementById('boshlash').style.display="none";
+                    
+                }
+            </script>
+        
+        
+            <div id="savollar1" class="savollar1" style="display: none;">
+                <h2>[1/24] 1940-yilda Buyuk Britaniya hukumati boshlig'i lavozimini egallagan shaxsni ko'rsating.</h2>
+                <button id="wrong2" class="wrong" class="wrong" onclick="wrong2()">David Lloyd Jorj</button>
+                <button id="right" class="right" onclick="right()">Uinston Cherchil</button>
+                <button id="wrong3" class="wrong" class="wrong" onclick="wrong3()">Margeret tetcher</button>
+          
+                <script>
+                    function right() {    
+                        document.getElementById('savollar2').style.display="block";
+                        document.getElementById('savollar1').style.display="none";
+                        integer +=1;
+                        document.getElementById('natija').innerHTML= "Natija "+" 10/"+integer; 
+                    }
+                   function wrong2() {    
+                        document.getElementById('savollar2').style.display="block";
+                        document.getElementById('savollar1').style.display="none";
+                       
+                    }
+                    function wrong3() {    
+                        document.getElementById('savollar2').style.display="block";
+                        document.getElementById('savollar1').style.display="none";
+                        
+                    }
+                    </script>
+            </div>
+            <div id="savollar2" class="savollar2" style="display: none;">
+                <h2>[2/24] "Karib inqirozi" AQSH va SSSRda qaysi rahbarlarning boshqaruv davriga to'g'ri kelgan?</h2>
+                <button id="wrong2.1" class="wrong" onclick="wrong2_1()">R.Reygan va M.Gorbachov</button>
+                <button id="right2"  class="right" onclick="right2()">J.Kennedi  va N.Xrushchyov</button>
+                <button id="wrong2.3" class="wrong" onclick="wrong2_2()">J.Kennedi  va L.Brejnev</button>
+              
+                    
+          
+                <script>
+                    function right2() {    
+                        document.getElementById('savollar3').style.display="block";
+                        document.getElementById('savollar2').style.display="none";
+                        integer +=1;
+                        document.getElementById('natija').innerHTML= "Natija "+" 10/"+integer;
+                         
+                    }
+                    function wrong2_1() {    
+                        document.getElementById('savollar3').style.display="block";
+                        document.getElementById('savollar2').style.display="none";
+                    }
+                    function wrong2_2() {    
+                        document.getElementById('savollar3').style.display="block";
+                        document.getElementById('savollar2').style.display="none";
+                        }
+                </script>
+            </div>
+
+            <div id="savollar3" class="savollar3" style="display: none;" >
+                <h2>[3/24] 1932-yil aprelda Germaniyada bo'lib o'tgan prezidentlik saylovida g'olib chiqqan shaxsni toping.</h2>
+                <button id="wrong3.1" class="wrong" onclick="wrong3_1()">Adolf Gitler</button>
+                <button id="wrong3.2" class="wrong" onclick="wrong3_2()">Eduard Dalade</button>
+                <button id="right3"  class="right" onclick="right3()">Paul fon Gindenburg</button>
+                <script>
+                    function right3() {    
+                        document.getElementById('savollar4').style.display="block";
+                        document.getElementById('savollar3').style.display="none";
+                        integer+=1;
+                        document.getElementById('natija').innerHTML= "Natija "+" 10/"+integer;
+
+                        }
+                        function wrong3_1() {    
+                            document.getElementById('savollar4').style.display="block";
+                            document.getElementById('savollar3').style.display="none";
+                        }
+                        function wrong3_2() {    
+                            document.getElementById('savollar4').style.display="block";
+                            document.getElementById('savollar3').style.display="none";
+                        }
+                </script>
+            </div>
+
+            <div id="savollar4" class="savollar4" style="display: none;" >
+                <h2>[4/24] AQSHda qaysi Prezident boshqaruvi davrida Senator Jozef Makkarti davlat organlarida josuslar va kommunistlarni aniqlash uchun tekshiruvlar olib borgan?</h2>
+                <button id="wrong4.1" class="wrong" onclick="wrong4_1()">R.Reygan </button>
+                <button id="wrong4.2" class="wrong" onclick="wrong4_2()">J.Kennedi</button>
+                <button id="right4"  class="right" onclick="right4()">D.Eyzenxauer</button>
+                <script>
+                    function right4() {    
+                        document.getElementById('savollar5').style.display="block";
+                        document.getElementById('savollar4').style.display="none";
+                        integer+=1
+                        document.getElementById('natija').innerHTML= "Natija "+" 10/"+integer;
+                        }
+                        function wrong4_1() {    
+                            document.getElementById('savollar5').style.display="block";
+                            document.getElementById('savollar4').style.display="none";
+                        }
+                        function wrong4_2() {    
+                            document.getElementById('savollar5').style.display="block";
+                            document.getElementById('savollar4').style.display="none";
+                        }
+                        
+                </script>
+            </div>
+
+            <div id="savollar5" class="savollar5" style="display: none;" >
+                <h2>[5/10] Pokistonda 1977-yildagi davlat to'ntarishidan so'ng hokimiyat tepasiga kelgan shaxsni aniqlang.</h2>
+                <button id="right5" class="right5" onclick="right5()">Ziyo ul-Haq</button>
+                <button id="wrong5.1" class="wrong" onclick="wrong5_1()">Parvez Musharraf</button>
+                <button id="wrong5.2" class="wrong5.1"  onclick="wrong5_2()">Liikat  Alixon</button>
+                <script>
+                    function right5() {    
+                        document.getElementById('savollar6').style.display="block";
+                        document.getElementById('savollar5').style.display="none";
+                        let integer=+1;
+                        document.getElementById('natija').innerHTML= "Natija "+" 10/"+integer;
+                        }
+                        function wrong5_1() {    
+                            document.getElementById('savollar6').style.display="block";
+                            document.getElementById('savollar5').style.display="none";
+                        }
+                        function wrong5_2() {    
+                            document.getElementById('savollar6').style.display="block";
+                            document.getElementById('savollar5').style.display="none";
+                        }
+                       
+                </script>
+            </div>
+
+            <div id="savollar6" class="savollar6" style="display: none;" >
+                <h2>[6/10] AQSHda "Uotergeyt ishi" nomli siyosiy janjal qaysi Prezident boshqaruvi davri bilan bog'liq?</h2>
+                <button id="right6" class="right6" onclick="right6()">R.Nikson</button>
+                <button id="wrong6.1" class="wrong" onclick="wrong6_1()">R.Reygan</button>
+                <button id="wrong6.2" class="wrong5.1"  onclick="wrong6_2()">D.Eyzenxauer</button>
+                <script>
+                    function right6() {    
+                        document.getElementById('savollar7').style.display="block";
+                        document.getElementById('savollar6').style.display="none";
+                        integer+1;
+                        document.getElementById('natija').innerHTML= "Natija "+" 10/"+integer;
+                        }
+                        function wrong6_1() {    
+                            document.getElementById('savollar7').style.display="block";
+                       
+                            document.getElementById('savollar6').style.display="none";
+                        }
+                        function wrong6_2() {    
+                            document.getElementById('savollar7').style.display="block";
+                       
+                            document.getElementById('savollar6').style.display="none";
+                        }
+                        
+                </script>
+            </div>
+
+            <div id="savollar7" class="savollar7" style="display: none;" >
+                <h2>[7/10] 1926-yili Xitoyda kim boshchiligidagi Gomindan milliy hukumati davrida Milliy inqilobiy armiyaning shimolga yurishi boshlangan?</h2>
+                <button id="wrong7.1" class="wrong" onclick="wrong7_1()">Sun Yatsen</button>
+                <button id="wrong7.2" class="wrong" onclick="wrong7_2()">U Peyfu</button>
+                <button id="right7"  class="right" onclick="right7()">Chan Kayshi</button>
+                
+                
+                <script>
+                    function right7() {    
+                        document.getElementById('savollar8').style.display="block";
+                        document.getElementById('savollar7').style.display="none";
+                        integer+=1;
+                        document.getElementById('natija').innerHTML= "Natija"+"10/"+integer;
+                        }
+                        function wrong7_1() {    
+                            document.getElementById('savollar8').style.display="block";
+                       
+                            document.getElementById('savollar7').style.display="none";
+                        }
+                        function wrong7_2() {    
+                            document.getElementById('savollar8').style.display="block";
+                       
+                            document.getElementById('savollar7').style.display="none";
+                        }
+                       
+                </script>
+            </div>
+
+            <div id="savollar8" class="savollar8" style="display: none;" >
+                <h2>[8/10] Ikkinchi jahon urushi yillarida Yugoslaviyada ozodlik harakatiga boshchilik qilgan shaxsni belgilang.</h2>
+            <button id="wrong8.1" class="wrong" onclick="wrong8_1()">F.d.Ruzvelt</button>
+            <button id="wrong8.2" class="wrong" onclick="wrong8_2()">Sh.de.Goll</button>
+            <button id="right8"  class="right" onclick="right8()">I.B.Tito</button>
+                <script>
+                    function right8() {    
+                        document.getElementById('savollar9').style.display="block";
+                        document.getElementById('savollar8').style.display="none";
+                        integer +=1;
+                        document.getElementById('natija').innerHTML= "Natija"+"10/"+integer;
+                        }
+                        function wrong8_1() {    
+                            document.getElementById('savollar9').style.display="block";
+                       
+                            document.getElementById('savollar8').style.display="none";
+                        }
+                        function wrong8_2() {    
+                            document.getElementById('savollar9').style.display="block";
+                       
+                            document.getElementById('savollar8').style.display="none";
+                        }
+                        
+                </script>
+            </div>
+
+            <div id="savollar9" class="savollar9" style="display: none;" >
+                <h2>[9/10] Ikkinchi jahon urushi yillarida Yugoslaviyada ozodlik harakatiga boshchilik qilgan shaxsni belgilang.</h2>
+            <button id="wrong8.1" class="wrong" onclick="wrong9_1()">F.d.Ruzvelt</button>
+            <button id="wrong8.2" class="wrong" onclick="wrong9_2()">Sh.de.Goll</button>
+            <button id="right8"  class="right" onclick="right9()">I.B.Tito</button>
+                
+                <script>
+                    function right9() {    
+                        document.getElementById('savollar10').style.display="block";
+                        document.getElementById('savollar9').style.display="none";
+                        integer+=1;
+                        document.getElementById('natija').innerHTML= "Natija"+"10/"+integer;
+                        
+                     }
+                     function wrong9_1() {    
+                         document.getElementById('savollar10').style.display="block";
+                    
+                           document.getElementById('savollar9').style.display="none";
+                       }
+                      function wrong9_2() {    
+                          document.getElementById('savollar10').style.display="block";
+                    
+                         document.getElementById('savollar9').style.display="none";
+                      }
+                      
+                </script>
+            </div>
+
+            <div id="savollar10" class="savollar10" style="display: none;" >
+                <h2>[10/10] SSSR rahbarlaridan qaysi birining boshqaruv davri tarixda "iliqlik" davri degan nom olgan?</h2>
+                <button id="wrong10.1" class="wrong" onclick="wrong10_1()">I.Stalin</button>
+                <button id="wrong10.2" class="wrong" onclick="wrong10_2()">L.Brejnev</button>
+                <button id="right10"  class="right" onclick="right10()">N.Xrushchyov</button>
+                
+                <script>
+                    function right10() {    
+                        document.getElementById('savollar11'). style.display="block";
+                        document.getElementById('savollar10').style.display="none";
+                        integer+=1;
+                        document.getElementById('natija').innerHTML= "Natija "+" 10/"+integer;
+                        }
+                        function wrong10_1() {    
+                            document.getElementById('savollar11').style.display="block";
+                       
+                            document.getElementById('savollar10').style.display="none";
+                        }
+                        function wrong10_2() {    
+                            document.getElementById('savollar11').style.display="block";
+                       
+                            document.getElementById('savollar10').style.display="none";
+                        }
+                        
+                       
+                </script>
+            </div>
+
+            <div id="savollar11" class="savollar11" style="display: none;" >
+                <p class="natija" id="natija" style="color:#fff; font-size: 35px;" ></p>
+                <script>
+                    document.getElementById('natija').innerHTML= +"sizning  natijangiz " +integer;
+                    document.getElementById('takrorlash').style.display='block'
+                </script>
+                <a href="/bosh.html" id="takrorlash" style="display: none;"> takrorlash</a>
+            </div>
+        </div>
+            
+    
+</body>
+</html>
